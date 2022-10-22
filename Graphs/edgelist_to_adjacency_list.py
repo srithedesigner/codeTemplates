@@ -6,7 +6,7 @@ from tokenize import ContStr
 #unweighted
 def edgeToAdj(edgeList):
 
-    adj = defaultdict()
+    adj = defaultdict(list)
 
     for x, y in edgeList:
         adj[x].append(y)
